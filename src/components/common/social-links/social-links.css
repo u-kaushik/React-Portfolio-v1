@@ -1,0 +1,21 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-container {
+  padding: 6px;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.social-icon {
+  height: 60px;
+}
+
+@media screen and (max-width: 700px) {
+  .social-icon {
+    height: 45px;
+  }
+}

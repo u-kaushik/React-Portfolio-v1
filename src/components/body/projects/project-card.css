@@ -1,0 +1,96 @@
+.project-card {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+  padding: 16px 0px;
+}
+
+.project-photo {
+  width: 50%;
+}
+
+.project-info {
+  margin-right: 24px;
+  width: 40%;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.project-tags {
+  display: flex;
+  max-width: 60%;
+  flex-wrap: wrap;
+}
+
+.project-tag {
+  padding: 8px;
+  background-color: var(--blue);
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+.project-tag > p {
+  margin: 0;
+  height: 15px;
+}
+
+.project-links {
+  display: flex;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-right: 6px;
+  width: 100px;
+}
+
+.link-button > i {
+  display: flex;
+  align-items: center;
+  mask-repeat: 4px;
+  padding-right: 5px;
+}
+
+.link-button > p {
+  height: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .project-photo {
+    width: 70%;
+    padding-bottom: 20px;
+  }
+
+  .project-card {
+    flex-direction: column-reverse;
+  }
+
+  .project-info {
+    margin-left: 0px;
+    margin-top: 12px;
+    width: 75%;
+  }
+
+  .project-tags {
+    max-width: 100%;
+  }
+}
