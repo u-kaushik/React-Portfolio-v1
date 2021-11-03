@@ -15,13 +15,13 @@ function About() {
           <p></p>
           </div>
         </div>
-        <div className="about-photo">
+        {/* <div className="about-photo">
           <img
             src={require("../../../assets/about-illustration.png").default}
             className="about-illustration"
             alt="illustration"
           />
-        </div>
+        </div> */}
       </div>
       <SocialLinks />
     </div>

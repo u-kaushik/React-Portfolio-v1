@@ -9,9 +9,9 @@ export const SocialData = [
     icon: require("../../assets/icons/linkedin.png").default,
     link: "https://www.linkedin.com/in/utkarshkaushik",
   },
-  {
-    platform: "Medium",
-    icon: require("../../assets/icons/medium.png").default,
-    link: "https://medium.com/@ukaushik",
-  },
+  // {
+  //   platform: "Medium",
+  //   icon: require("../../assets/icons/medium.png").default,
+  //   link: "https://medium.com/@ukaushik",
+  // },
 ];
