@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 
 export const Email = () => {
   const form = useRef();
@@ -7,17 +7,34 @@ export const Email = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_zwaecj9', 'outlook_template', form.current, 'user_6OdYAUdpK4aWvwa6KlYA0')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_zwaecj9",
+        "outlook_template",
+        form.current,
+        "user_6OdYAUdpK4aWvwa6KlYA0"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-      form.current.reset();
+        }
+      );
+    form.current.reset();
   };
 
   return (
-    <form className="form" ref={form} onSubmit={sendEmail}>
+    <form
+      className="form"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+      ref={form}
+      onSubmit={sendEmail}
+    >
+      <input type="hidden" name="form-name" value="form" />
       <label>Name</label>
       <input type="text" name="from_name" />
       <label>Email</label>
@@ -29,6 +46,4 @@ export const Email = () => {
   );
 };
 
-
-
-export default Email
+export default Email;
